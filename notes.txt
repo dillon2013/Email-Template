@@ -1,0 +1,8 @@
+## Vaiables ##
+email title
+header img
+footer img
+table width
+table bg-color
+font-color
+font-size
