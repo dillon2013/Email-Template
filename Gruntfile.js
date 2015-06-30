@@ -2,8 +2,7 @@ var helpers = require('./my-helpers');
 
 module.exports = function(grunt){
 
-	// load the tasks that you want to use after installing with loadNpmTasks
-	grunt.loadNpmTasks('grunt-ejs');
+	
 
 	// configure grunt tasks
 	grunt.initConfig({
@@ -12,15 +11,27 @@ module.exports = function(grunt){
 
 		ejs : {
 			all : {
-				options : grunt.util_merge(helpers,{}),
+				options : helpers,
 				src :'index.ejs',
 				dest : 'dist/index.html'
 			}
-		}
+		},
+
+		copy: {
+		  main: {
+		    src: 'images/*',
+		    dest: 'dist/',
+		  },
+		},
 
 	});
 
+
+	// load the tasks that you want to use after installing with loadNpmTasks
+	grunt.loadNpmTasks('grunt-ejs');
+	grunt.loadNpmTasks('grunt-contrib-copy');
+
 	//create commands for terminal 
-	grunt.registerTask('build',['ejs']);
+	grunt.registerTask('build',['ejs','copy']);
 
 }

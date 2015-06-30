@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title><%= title || 'Email Template' %></title>
+	<title>Test Title</title>
 	<style type="text/css">
 
         @media only screen and (max-device-width: 480px) {
@@ -25,14 +25,14 @@
 		border="0" 
 		width="650" 
 		style="border-collapse:collapse;
-		font-size:<%= font_size || '18px' %>;
-		font-family:<%= font_family || 'helvetica' %>;
-		color:<%= font_color || '#000' %>
-		background-color: <%= background_color || '#fff'%>"
+		font-size:18px;
+		font-family:helvetica;
+		color:red
+		background-color: red"
 	>
 		<tr>
 			<td colspan="3">
-				<img style="display:block" border="0" src="<%= img_path || 'images/'%>header.png" alt="header">
+				<img style="display:block" border="0" src="http:chameleon-web.com/emails/test/header.png" alt="header">
 			</td>
 		</tr>
 
@@ -43,10 +43,10 @@
 					border="0" 
 					width="650" 
 					style="border-collapse:collapse;
-					font-size:<%= font_size || '18px' %>;
-					font-family:<%= font_family || 'helvetica' %>;
-					color:<%= font_color || '#000' %>
-					background-color: <%= background_color || '#fff'%>"
+					font-size:18px;
+					font-family:helvetica;
+					color:red
+					background-color: red"
 				>
 					<tr>
 						<td border="0">
@@ -64,7 +64,7 @@
 
 		<tr>
 			<td colspan="3">
-				<img style="display:block" border="0" src="<%= img_path || 'images'%>/footer.png" alt="footer">
+				<img style="display:block" border="0" src="http:chameleon-web.com/emails/test//footer.png" alt="footer">
 			</td>
 		</tr>
 	</table>
